@@ -27,7 +27,7 @@ function stopWatching() {
 
 function updateSpeed(position) {
     const speedElement = document.querySelector(".speed-digit");
-    console.log(position);
+   alert(position.coords.speed);
 
     // Calculate speed using the position's speed property (in meters per second)
     const speed = Math.round((position.coords.speed || 0) * 3.6); // Convert to km/h and round
