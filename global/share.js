@@ -1,0 +1,1 @@
+async function sharePost(){if(navigator.share)try{await navigator.share({title:"Free Online GPS Speedometer",text:"Experience the convenience of tracking your speed anytime, anywhere.",url:"https://Onlinespeedometer.online"})}catch(e){console.error("Error sharing:",e)}else showToast("Web Share API is not available on this device.")}
